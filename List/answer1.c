@@ -7,7 +7,7 @@ char puzzle[4][4]={
 	{'o','a','h','g'},
 	{'f','g','g','t'}
 };
-char *dict[4]={"this","two","fat","that"};
+char *dict[5]={"this","two","fat","that"};
 
 int wordExist(int x, int y, int dir, int strlen, char *word, int(*position)[2]);
 
@@ -39,7 +39,7 @@ int wordExist(int x, int y, int dir, int strlen, char *word, int position[][2]){
 		position[i][1]=y;
 		sword[i++]=puzzle[x][y];
 		sword[i]='\0';
-		for(j=0; j<4; j++){
+		for(j=0; j<5; j++){
 			if(strcmp(sword,dict[j])==0){
 				strcpy(word,dict[j]);
 				return 1;
