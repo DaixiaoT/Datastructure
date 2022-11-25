@@ -19,7 +19,7 @@ void Student::readFromFile(fstream& in) {
 ostream& Student::writeLegibly(ostream& out) {
     Personal::writeLegibly(out);
     major[majorLen] = '\0';
-    out << ",major = " << major;
+    out << ", major = " << major;
     return out;
 }
 istream& Student::readFromConsole(istream& in) {

@@ -14,11 +14,11 @@ class Student : public Personal {
         char *major;
         const int majorLen;
         ostream& writeLegibly(ostream&);
-        friend ostream& operator<<(ostream& out, Student& sr) {
+        friend ostream& operator << (ostream& out, Student& sr) {
             return sr.writeLegibly(out);
         }
         istream& readFromConsole(istream&);
-        friend istream& operator>>(istream& in, Student& sr) {
+        friend istream& operator >> (istream& in, Student& sr) {
             return sr.readFromConsole(in);
         }
 };

@@ -27,11 +27,11 @@ class Personal {
         int year;
         long salary;
         ostream& writeLegibly(ostream&);
-        friend ostream& operator<<(ostream& out, Personal& pr) {
+        friend ostream& operator << (ostream& out, Personal& pr) {
             return pr.writeLegibly(out);
         }
         istream& readFromConsole(istream&);
-        friend istream& operator>>(istream& in, Personal& pr){
+        friend istream& operator >> (istream& in, Personal& pr){
             return pr.readFromConsole(in);
         }
 };
