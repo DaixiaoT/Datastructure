@@ -15,7 +15,7 @@ class IntSLLNode{//节点包含两个数据成员info和next
 };
 class IntSLList{
     public:
-        IntSLList(){
+        IntSLList(){//定义两个数据成员，head和tail
             head = tail = 0;
         }
         ~IntSLList();
