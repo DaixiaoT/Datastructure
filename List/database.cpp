@@ -88,7 +88,8 @@ void Database<T>::run(){
             modify(rec);
         }else if (*option != '4'){
             cout << "Wrong option\n";
-        }else return;
+        }
+        else return;
         cout << *this;
         cout << "Enter an option: ";
     }
